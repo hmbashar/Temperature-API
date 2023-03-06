@@ -12,10 +12,13 @@ loadTemperature('Patuakhali');
 
 const displayTemp = data => {
     const cityName = document.getElementById('cityName');
+    const lead = document.getElementById('lead');
     const temp = document.getElementById('temperature');
     temp.innerText = data.main.temp;
 
     cityName.innerText = data.name;
+
+    lead.innerText = data.weather[0].main;
 
 }
 

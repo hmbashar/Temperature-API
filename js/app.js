@@ -19,3 +19,8 @@ const displayTemp = data => {
 
 }
 
+document.getElementById('btn-search').addEventListener('click', function() {
+    const searchField = document.getElementById('search-field');
+    const searchCity = searchField.value;
+    loadTemperature(searchCity);
+});
